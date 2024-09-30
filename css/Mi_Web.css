@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("C:/Users/alexm/OneDrive/Documents/Miweb/Iconos_redes/saturno.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    font-size:small;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0e0d0d;
+    color: rgb(255, 7, 7);
+    padding: 10px 0;
+    text-align: center;
+    font-size:smaller;
+    font-family:cursive;
+}
+/* Estilos para el logo */
+.logo{
+    position: absolute;
+    top: 10px;
+    right: 1px;
+}
+
+.logo img{
+    width: 50%;
+    height: 60%;
+}
+/* Estilos para los iconos de redes */
+.social-icons {
+    display: flex;
+    gap: 20px; /* Espacio entre los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-top: 20px; /* Espacio arriba de los iconos */
+}
+
+.icon {
+    width: 50px; /* Tamaño del contenedor del icono */
+    height: 50px; /* Tamaño del contenedor del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+    overflow: hidden; /* Oculta el desbordamiento del icono */
+    background-color: #fff; /* Color de fondo del contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.icon img {
+    width: 30px; /* Tamaño del icono */
+    height: 30px; /* Tamaño del icono */
+    transition: filter 0.3s ease; /* Transición suave para el filtro */
+}
+
+/* Estilo al pasar el puntero del mouse */
+.icon:hover {
+    transform: rotate(360deg); /* Rota el icono 360 grados */
+    background-color: #0ff; /* Color de fondo neón al pasar el puntero */
+    box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.7); /* Sombra de color neón */
+}
+
+.icon:hover img {
+    filter: none; /* Elimina el filtro de la imagen */
+    opacity: 1; /* Asegura que la imagen sea completamente opaca */
+}
+
+/* Estilos para el texto en movimiento */
+.scrolling-tex{
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    font-size:x-large;
+    color: #fd0505;
+    margin-bottom: 20px;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(80%);
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+}
+
+/* Estilos para los enlaces */
+nav {
+    text-align: center; /* Centra los enlaces dentro del contenedor */
+    margin-top: 20px; /* Añade espacio arriba del contenedor de navegación */
+}
+
+nav a {
+    display: inline-block; /* Permite aplicar padding y border a los enlaces */
+    padding: 10px 20px; /* Espacio interno del "botón" */
+    margin: 0 10px; /* Espacio entre los botones */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: black; /* Color del texto */
+    background-color: #00aeff; /* Color de fondo del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    font-size: 20px; /* Tamaño de la fuente */
+    transition: all 0.3s ease; /* Transición suave para el cambio de color y tamaño */
+}
+
+nav a:hover {
+    background-color: #b30009; /* Color de fondo al pasar el puntero del mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+#sobre-mi {
+    padding: 20px;
+    background-color: #7a5454;
+}
+
+#sobre-mi h2 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+
+.info-container {
+    display: flex; /* Alinea los productos en fila */
+    justify-content: center; /* Centra los productos horizontalmente */
+    gap: 10px; /* Espacio entre los productos */
+}
+
+.info-container p {
+    font-family: cursive;
+}
+
+.informacion {
+    max-width: 100%;
+    height: auto;
+}
+
+.informacion {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    text-align: left;
+    max-width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.informacion h3 {
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.informacion p, ul {
+    line-height: 1.6;
+    color: #333;
+}
+
+.informacion ul {
+    list-style-type:  none;
+}
+
+.informacion ul li:before {
+    content: ".";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.informacion:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del producto al pasar el mouse por encima */
+}
+.proyecto-container img {
+    max-width: 70%;
+    height: auto;
+}
+
+.proyecto-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-container:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del producto al pasar el mouse por encima */
+}
+
+.juegos-container img{
+    max-width: 70%;
+    height: auto;
+}
+
+.juegos-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.juegos-container:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del producto al pasar el mouse por encima */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+}

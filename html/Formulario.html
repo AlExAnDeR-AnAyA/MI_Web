@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>Registro<br>
+    <br>
+    <form action="https://codesaturn.000webhostapp.com" method="post">
+    <table name="Registro" bordercolor="green">
+        <tr>
+            <td>Nombre:</td>
+            <td><input type="text" name="Nombre" size="40" maxlength="50"></td>
+            <td>Sexo</td>
+            <td><select name="opcion">
+                <option value="M">M</option>
+                <option value="F">F</option>
+                <option value="No Define">No Define</option>
+                <option value="none" selected="selected"></option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>Documento:</td>
+            <td><input type="text" name="Nombre" size="40" maxlength="50"></td>
+        </tr>
+
+        <tr>
+            <td>E-mail:</td>
+            <td><input type="email" name="e_mail" id="" size="40" maxlength="50"></td>
+        </tr>
+
+        <tr>
+            <td>Comentario:</td>
+            <td><textarea name="comentario" id="" cols="50" rows="5"></textarea></td>
+            <td>Pais</td>
+            <td><select name="pais">
+                <option value="none" selected="selected"></option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">Mexico</option>
+                <option value="canada">Canada</option>
+                <option value="estados unidos">Estados Unidos</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>terminos y condiciones.<input type="checkbox" name="condiciones_licencia" value="si" checked></td>
+            <td>¿Quieres recibir información por correo
+                Si <input type="radio" name="correo" value="si"checked>
+                No <input type="radio" name="correo" value="no">
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Enviar"><input type="reset"></td>
+        </tr>
+
+    </table>
+    </form>
+</body>
+</html>
